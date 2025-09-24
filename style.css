@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0B0C10;
+  color: #E0E0E0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 20px 0;
+  color: #FFD700;
+}
+
+.moon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1000px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.moon-box, .text-box {
+  background-color: rgba(26, 26, 46, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.moon-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text-box h2 {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  color: #E0E0E0;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #1A1A2E;
+  color: #FFD700;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #FFD700;
+  color: #1A1A2E;
+}
+
+@media (max-width: 768px) {
+  .moon-container {
+    flex-direction: column;
+  }
+}
