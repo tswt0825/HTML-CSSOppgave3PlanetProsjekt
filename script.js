@@ -147,6 +147,11 @@ document.getElementById("prev-btn").addEventListener("click", () => {
   updateMoon();
 });
 
+document.getElementById("today-btn").addEventListener("click", () => {
+  currentIndex = getMoonDayIndex(); // hopper til dagens månedag
+  updateMoon();
+});
+
 document.getElementById("next-btn").addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % moonData.length;
   updateMoon();
