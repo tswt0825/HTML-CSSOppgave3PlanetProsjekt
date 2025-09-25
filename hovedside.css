@@ -1,0 +1,20 @@
+:root{
+    --blågrå: #0B0C10;
+    --dypblå:#1A1A2E; 
+    --sølvgrå:#E0E0E0;
+    --lysblå:#ADD8E6;
+    --grønn:#618372;
+    --gul:#DAA520 ;
+    --shadow: 0 0 6px rgba(255, 255, 255, 0.8),   
+    0 0 12px rgba(207, 186, 31, 0.6),    
+    0 0 18px rgba(219, 87, 16, 0.4); 
+
+    --small-font:12px;
+    --large-font: 50px;
+   
+
+}
+/* i header, skriv da slik:
+ background-color: var(--dark-brown);
+ font-sixe: var(--small-font);
+ endrer du da rooten, så vil alt på siden endre seg også. så kan være greit å bruke slik */
