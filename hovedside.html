@@ -1,30 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>månen</title>
-    <link rel="stylesheet" href="hovedside.html">
+    <link rel="stylesheet" href="hovedside.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    
   </head>
+
   <body>
-    <header>
-      <p>Hjem</p>
-      <nav>
-        <ul>
-          <li><a href="#moon-phase">Månen i dag</a></li>
-          <li><a href="#facts">Fakta</a></li>
-          <li><a href="#gallery">Bilder</a></li>
-          <li><a href="#myths">Myter og overtro</a></li>
-        </ul>
-        <main>
+<header>
+  <nav class="navbar">
+    <h1>Månen</h1>
+    
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul> <!-- Makes the menu into a hamburger-icon om small devices: -->
+      <li><a href="#moon-phase">Dagens Månefase</a></li>
+      <li><a href="#facts">Fakta</a></li>
+      <li><a href="#gallery">Galleri</a></li>
+      <li><a href="#myths">Myter & Kultur</a></li>
+    </ul>
+  </nav>
+</header>
+
           <section id="moon-phase">
             <h2>Dagens månefase</h2>
+
+
+            <div class="moon-container">
+  <div class="moon-box">
+    <img id="moon-image" src="images/dag-1.png" alt="Månebilde">
+  </div>
+  <div class="text-box">
+    <h2 id="moon-title">Dag 1: Nymåne</h2>
+    <p id="moon-text">Månen er nesten usynlig. Den opplyste delen vokser fra 0%. Dette er starten på en ny lunasjon. Jordskinn kan gi et svakt lys, men månen er ellers usynlig. I mange kulturer markerer nymåne starten på en ny måned.</p>
+  </div>
+</div>
+
+<div class="buttons">
+  <button id="prev-btn">Forrige</button>
+  <button id="today-btn">I dag</button>
+  <button id="next-btn">Neste</button>
+</div>
             <div class="container">
-              <div class="moon-box"></div>
               <div class="info-box"></div>
             </div>
           </section>
-          <section id="facts">
+
+
+          <section class="moon-box" id="facts">
             <h2>Fakta om månen</h2>
             <ul>
               <li>
@@ -40,7 +67,7 @@
                 (siderisk måned).
               </li>
               <li>
-                En synodisk måned – altså tiden fra nymåne til nymåne – varer
+                En synodisk måned - altså tiden fra nymåne til nymåne - varer
                 ca. 29,5 dager.
               </li>
               <li>Tyngdekraften fra Månen forårsaker tidevann på Jorden.</li>
@@ -61,12 +88,12 @@
                 Neil Armstrong og Buzz Aldrin.
               </li>
               <li>
-                Månen beveger seg gradvis bort fra Jorden – ca. 3,8 cm per år.
+                Månen beveger seg gradvis bort fra Jorden, ca. 3,8 cm per år.
               </li>
             </ul>
           </section>
 
-          <section id="gallery">
+          <section class="moon-box" id="gallery">
             <h2>Bildegalleri</h2>
             <div class="gallery">
               <img src="images/bilde1.jpg" alt="Måne bilde 1" /><img
@@ -81,17 +108,16 @@
               />
             </div>
           </section>
-          <section id="myths">
+
+          <section class="text-box" id="myths">
             <h2>Myter og kultur om månen</h2>
+            <h3>Norge og Norden</h3>
+            <div class="history-row">
+            <div class="history-text">
             <p>
               Månen har fascinert mennesker i alle kulturer gjennom historien. I
               Norden ble månen sett på som en viktig del av naturens rytmer og
-              var tett knyttet til både tid, jakt og jordbruk.
-            </p>
-
-            <h3>Norge og Norden</h3>
-            <p>
-              I norrøn mytologi ble månen personifisert som
+              var tett knyttet til både tid, jakt og jordbruk. I norrøn mytologi ble månen personifisert som
               <strong>Máni</strong>, sønn av guden Mundilfari. Ifølge mytene
               kjører han en vogn trukket av hester over himmelen, jaget av ulven
               Hati. Når Hati til slutt fanger ham, vil det markere Ragnarok –
@@ -99,8 +125,15 @@
               siden mange av de eldste nordiske kalenderne var basert på
               månesykluser.
             </p>
+            </div>
+            <div class="history-picture" >
+              <img class="culture-img" src="./images/image-asset.webp" alt="A women holding a glowing moon">
+            </div>
+            </div>
+            </div>
 
             <h3>Det gamle Egypt</h3>
+            <div class="history"></div>
             <p>
               I egyptisk mytologi var månen ofte assosiert med guden
               <strong>Thoth</strong>, visdommens og skriftens gud, som ble
@@ -109,8 +142,10 @@
               fikk innflytelse i Egypt. Månen ble sett på som en himmelsk vokter
               som balanserte solens kraft.
             </p>
+            </div>
 
             <h3>Litteratur og musikk</h3>
+            <div class="history"></div>
             <p>
               Månen har inspirert poeter, forfattere og komponister i århundrer.
               Den blir ofte brukt som symbol på romantikk, lengsel eller
@@ -126,12 +161,14 @@
               følelser, har månen alltid hatt en plass i både mytologi og kultur
               – og den fortsetter å inspirere oss i dag.
             </p>
+            </div>
           </section>
-        </main>
+        
+
         <footer>
           <p>© 2025 Måneprosjekt</p>
         </footer>
-      </nav>
-    </header>
+      
+    <script src="hovedside.js"></script>
   </body>
 </html>
