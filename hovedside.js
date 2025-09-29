@@ -1,3 +1,10 @@
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".navbar ul");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 const moonData = [
   {
     title: "Dag 1: Nymåne",
@@ -119,10 +126,10 @@ function getMoonDayIndex() {
   const now = new Date();
   const diffMs = now.getTime() - referenceNewMoon.getTime();
   const diffDays = diffMs / (1000 * 60 * 60 * 24);
-  const synodicMonth = 29.53058867; 
-  let moonAge = diffDays % synodicMonth; 
+  const synodicMonth = 29.53058867;
+  let moonAge = diffDays % synodicMonth;
   if (moonAge < 0) moonAge += synodicMonth;
-  const index = Math.floor(moonAge); 
+  const index = Math.floor(moonAge);
   return Math.min(Math.max(index, 0), 27);
 }
 
@@ -158,3 +165,6 @@ document.getElementById("next-btn").addEventListener("click", () => {
 });
 
 updateMoon();
+
+
+
