@@ -10,6 +10,8 @@
     0 0 18px rgba(219, 87, 16, 0.4); 
 }
 
+*{box-sizing: border-box;}
+
 html{
     scroll-behavior: smooth;
 }
@@ -20,6 +22,7 @@ html, body {
   overflow-x: hidden;
   padding-top: 120px; /* because of fixed header */
 }
+
 
  /* Navbar styling */
 header {
@@ -37,9 +40,6 @@ header {
   border-radius: 8px; /*  adds rounded corners to the element */
 }
 
-
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,6 @@ header {
   margin: 0 auto;
 
 }
-
 
 
 h1 {
@@ -95,11 +94,7 @@ h2 {
 .hamburger {
   display: none; /* hidden as standard */
 }
-/* OBS HAMBURGERMENYEN VISES SAMTIDIG- MÅ FIKSES */
 
-* {
-  box-sizing: border-box;
-}
 
 img {
   max-width: 100%;
@@ -117,13 +112,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-}
-
-
-
-body {
-  margin: 0;
-  padding: 0;
   background-image: url("./images/ksc-20220508-ph-snq01-0001orig.webp");
   background-size: cover;      
   background-repeat: no-repeat; 
@@ -132,13 +120,23 @@ body {
   background-attachment: fixed;    /* covers the screen*/
 }
 
+
 section {
   scroll-margin-top: 150px; /* when using links on the page, fixed navbar does not hide the content */
+  width: 90%;
+  background-color: rgba(26,26,46,0.6);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #ADD8E6;
+  box-shadow:   0 0 6px rgba(255, 255, 255, 0.8),   
+    0 0 12px rgba(207, 186, 31, 0.6),    
+    0 0 18px rgba(219, 87, 16, 0.4); 
+margin: 20px;
 }
 
 .culture-img{
-    padding: 20px;
-     width: 100%;
+  padding: 20px;
+  width: 100%;
   max-width: 500px;
   border-radius: 32px;
   overflow: hidden;
@@ -154,30 +152,37 @@ section {
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
 }
 
-
-.moon-container {
+.intro-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  max-width: 500px;
-  width: 90%;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
-.moon-box, .text-box {
-  background-color: rgba(26, 26, 46, 0.6);
+.intro-wrapper .moon-box img {
+  width: 100%;
+  max-height: 300px;
   border-radius: 20px;
-  border: 1px solid #ADD8E6;
-  box-shadow: 
-    0 0 6px rgba(255, 255, 255, 0.8),   
-    0 0 12px rgba(207, 186, 31, 0.6),    
-    0 0 18px rgba(219, 87, 16, 0.4); 
-  padding: 20px;
-  /* flex: 1;
+  display: block;
+  object-fit: contain;
+}
+
+
+.intro-wrapper .text-box {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+.intro-wrapper  {
+  flex: 0 0 300px;  
   display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  margin-top: 30px;
+
+}
+
+.intro-wrapper .buttons{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .history-row {
@@ -192,7 +197,7 @@ section {
 }
 
 .history-picture img {
- width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 12px; 
 }
@@ -208,11 +213,6 @@ section {
 }
 
 
-
-.moon-box img {
-  width: 100%;
-  border-radius: 20px;
-}
 
 .text-box h2 {
   color: #E0E0E0;
@@ -247,8 +247,8 @@ section {
 }
 
 #myths{
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .buttons button:hover {
@@ -256,6 +256,8 @@ section {
   color: #1A1A2E;
 }
 
+
+/* Adjustments based on screen-size */
 
 @media (max-width: 768px) {
   /* show hamburger-icon on cellphone(up to 768px) */
@@ -267,6 +269,19 @@ section {
     user-select: none;
   }
 
+
+.intro-wrapper {
+    flex-direction: column; /* stabler alt på mobil */
+    align-items: center;
+  }
+
+  .moon-box, .text-box {
+    flex: 1 1 100%; /* full bredde på mobil */
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 
   /* Make menu vertical and hide for toggle */
   .navbar ul {
@@ -294,7 +309,7 @@ flex-wrap: wrap;
    }
     
 
-     .history-text
+     .history-text,
   .history-picture {
     flex: 0 0 100%;
   }

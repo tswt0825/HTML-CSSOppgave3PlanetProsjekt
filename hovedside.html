@@ -3,54 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>månen</title>
+    <title>Månen</title>
     <link rel="stylesheet" href="hovedside.css">
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-    
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="./images/half-moon.png">
   </head>
 
   <body>
-<header>
+   <header>
   <nav class="navbar">
     <h1>Månen</h1>
-    
     <div class="hamburger" id="hamburger">&#9776;</div>
-    <ul> <!-- Makes the menu into a hamburger-icon om small devices: -->
+     <ul> <!-- Makes menu into a hamburger-icon om small devices: -->
       <li><a href="#moon-phase">Dagens Månefase</a></li>
       <li><a href="#facts">Fakta</a></li>
       <li><a href="#gallery">Galleri</a></li>
       <li><a href="#myths">Myter & Kultur</a></li>
-    </ul>
-  </nav>
-</header>
+     </ul>
+    </nav>
+   </header>
 
-          <section id="moon-phase">
-            <h2>Dagens månefase</h2>
-
-
-            <div class="moon-container">
+<section id="moon-phase">
+ <div class="intro-wrapper">
   <div class="moon-box">
-    <img id="moon-image" src="images/dag-1.png" alt="Månebilde">
-  </div>
-  <div class="text-box">
-    <h2 id="moon-title">Dag 1: Nymåne</h2>
-    <p id="moon-text">Månen er nesten usynlig. Den opplyste delen vokser fra 0%. Dette er starten på en ny lunasjon. Jordskinn kan gi et svakt lys, men månen er ellers usynlig. I mange kulturer markerer nymåne starten på en ny måned.</p>
-  </div>
-</div>
+  <img id="moon-image" src="images/dag-1.png" alt="Månebilde">
+ </div>
+
+ <div class="text-box">
+  <h2>Dagens månefase</h2>
+  <h2 id="moon-title">Dag 1: Nymåne</h2>
+  <p id="moon-text">Månen er nesten usynlig. Den opplyste delen vokser fra 0%. Dette er starten på en ny lunasjon. Jordskinn kan gi et svakt lys, men månen er ellers usynlig. I mange kulturer markerer nymåne starten på en ny måned.</p>
 
 <div class="buttons">
   <button id="prev-btn">Forrige</button>
   <button id="today-btn">I dag</button>
   <button id="next-btn">Neste</button>
 </div>
-            <div class="container">
-              <div class="info-box"></div>
-            </div>
-          </section>
-
-
+</div>
+</div>
+</section>
+            
           <section class="moon-box" id="facts">
             <h2>Fakta om månen</h2>
             <ul>
@@ -104,8 +98,7 @@
                 alt="Måne bilde 4"
               /><img src="images/bilde5.jpg" alt="Måne bilde 5" /><img
                 src="images/bilde6.jpg"
-                alt="Måne bilde 6"
-              />
+                alt="Måne bilde 6"/>
             </div>
           </section>
 
@@ -120,7 +113,7 @@
               var tett knyttet til både tid, jakt og jordbruk. I norrøn mytologi ble månen personifisert som
               <strong>Máni</strong>, sønn av guden Mundilfari. Ifølge mytene
               kjører han en vogn trukket av hester over himmelen, jaget av ulven
-              Hati. Når Hati til slutt fanger ham, vil det markere Ragnarok –
+              Hati. Når Hati til slutt fanger ham, vil det markere Ragnarok,
               verdens undergang. Månen var også viktig i gammel tidsregning,
               siden mange av de eldste nordiske kalenderne var basert på
               månesykluser.
@@ -130,10 +123,11 @@
               <img class="culture-img" src="./images/image-asset.webp" alt="A women holding a glowing moon">
             </div>
             </div>
-            </div>
+            
 
             <h3>Det gamle Egypt</h3>
-            <div class="history"></div>
+            <div class="history-row">
+            <div class="history-text">
             <p>
               I egyptisk mytologi var månen ofte assosiert med guden
               <strong>Thoth</strong>, visdommens og skriftens gud, som ble
@@ -143,9 +137,14 @@
               som balanserte solens kraft.
             </p>
             </div>
+            <div class="history-picture" >
+              <img class="culture-img" src="./images/thoth-egyptian-god-.jpg" alt="Thoth, egyptian god, standing in frint om a moon">
+            </div>
+            </div>
 
             <h3>Litteratur og musikk</h3>
-            <div class="history"></div>
+            <div class="history-row">
+            <div class="history-text">
             <p>
               Månen har inspirert poeter, forfattere og komponister i århundrer.
               Den blir ofte brukt som symbol på romantikk, lengsel eller
@@ -158,9 +157,13 @@
 
             <p>
               Enten den representerer mystikk, tidens gang eller menneskelig
-              følelser, har månen alltid hatt en plass i både mytologi og kultur
-              – og den fortsetter å inspirere oss i dag.
+              følelser har månen alltid hatt en plass i både mytologi og kultur,
+               og den fortsetter å inspirere oss i dag.
             </p>
+            </div>
+             <div class="history-picture" >
+              <img class="culture-img" src="./images/Måneskin-band-.png " alt="LP-cover named Måneskin, with picture of a band">
+            </div>
             </div>
           </section>
         
