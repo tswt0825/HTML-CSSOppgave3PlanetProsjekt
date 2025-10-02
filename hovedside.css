@@ -103,6 +103,10 @@ h2 {
   
 }
 
+.moon-box ul li{
+    list-style: none; 
+}
+
 .hamburger {
   display: none; /* hidden as standard */
 }
@@ -144,6 +148,10 @@ section {
     0 0 12px rgba(207, 186, 31, 0.6),    
     0 0 18px rgba(219, 87, 16, 0.4); 
 margin: 20px;
+}
+
+.section:hover {
+  background: rgba(18, 17, 17, 0.8); /* nesten helt svart når hover */
 }
 
 .culture-img{
