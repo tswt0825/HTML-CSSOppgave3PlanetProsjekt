@@ -1,175 +1,254 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Månen</title>
-    <link rel="stylesheet" href="hovedside.css">
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/png" href="./images/half-moon.png">
+    <link rel="stylesheet" href="hovedside.css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/half-moon.png" />
   </head>
 
   <body>
- <!-- Backgroundvideo -->
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="Video/Månen3.mp4" type="video/mp4">
-    <img src="images/ksc-20220508-ph-snq01-0001orig.webp" alt="Fallback bakgrunn">
-  </video>
+    <!-- Backgroundvideo -->
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="Video/Månen3.mp4" type="video/mp4" />
+      <img
+        src="images/ksc-20220508-ph-snq01-0001orig.webp"
+        alt="Fallback bakgrunn"
+      />
+    </video>
 
+    <header>
+      <nav class="navbar">
+        <h1>Månen</h1>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul>
+          <!-- Makes menu into a hamburger-icon om small devices: -->
+          <li><a href="#moon-phase">Dagens Månefase</a></li>
+          <li><a href="#facts">Fakta</a></li>
+          <li><a href="#gallery">Galleri</a></li>
+          <li><a href="#myths">Myter & Kultur</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section id="moon-phase">
+      <div class="intro-wrapper">
+        <div class="moon-box">
+          <img id="moon-image" src="images/dag-1.png" alt="Månebilde" />
+        </div>
 
-   <header>
-  <nav class="navbar">
-    <h1>Månen</h1>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-     <ul> <!-- Makes menu into a hamburger-icon om small devices: -->
-      <li><a href="#moon-phase">Dagens Månefase</a></li>
-      <li><a href="#facts">Fakta</a></li>
-      <li><a href="#gallery">Galleri</a></li>
-      <li><a href="#myths">Myter & Kultur</a></li>
-     </ul>
-    </nav>
-   </header>
+        <div class="text-box">
+          <h2>Dagens månefase</h2>
+          <h2 id="moon-title">Dag 1: Nymåne</h2>
+          <p id="moon-text">
+            Månen er nesten usynlig. Den opplyste delen vokser fra 0%. Dette er
+            starten på en ny lunasjon. Jordskinn kan gi et svakt lys, men månen
+            er ellers usynlig. I mange kulturer markerer nymåne starten på en ny
+            måned.
+          </p>
 
-<section id="moon-phase">
- <div class="intro-wrapper">
-  <div class="moon-box">
-  <img id="moon-image" src="images/dag-1.png" alt="Månebilde">
- </div>
+          <div class="buttons">
+            <button id="prev-btn">Forrige</button>
+            <button id="today-btn">I dag</button>
+            <button id="next-btn">Neste</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
- <div class="text-box">
-  <h2>Dagens månefase</h2>
-  <h2 id="moon-title">Dag 1: Nymåne</h2>
-  <p id="moon-text">Månen er nesten usynlig. Den opplyste delen vokser fra 0%. Dette er starten på en ny lunasjon. Jordskinn kan gi et svakt lys, men månen er ellers usynlig. I mange kulturer markerer nymåne starten på en ny måned.</p>
+    <section class="moon-box" id="facts">
+      <h2>Fakta om månen</h2>
+      <ul>
+        <li>
+          🌑Månen er Jordens eneste naturlige satellitt. Månen har gitt opphav
+          til fellesbenevnelsen «måne» og er den femte største månen i
+          solsystemet.
+          <br /><br />
+          Middelavstanden til Jorden er om lag 384 000 kilometer. Månen bruker i
+          gjennomsnitt 27 og en tredels dag på en runde rundt Jorden. Ettersom
+          Jorden og Månen har bunden rotasjon, ser vi samme side av Månen hele
+          tiden. Mennesket gikk for første gang på Månen 20. juli 1969, klokka
+          21:17:42 norsk tid, med romfartøyet Apollo 11, som del av
+          Apollo-programmet. Foreløpig siste gang et menneske gikk på Månen var
+          i 1972.
+        </li>
+        <br />
+        <li>
+          🌒Månen er synlig fra Jorden fordi den reflekterer lyset fra Sola. Den
+          har såkalt bunden rotasjon, det vil si at den alltid vender samme side
+          mot Jorden. Det ser ut som Månen vugger litt frem og tilbake i løpet
+          av en måned, et fenomen kalt librasjon. Dette skyldes at
+          banehastigheten varierer mens rotasjonshastigheten om egen akse er
+          konstant, og er også et resultat av banens eksentrisitet (at banen
+          ikke er sirkelrund), samt at rotasjonsaksens står på skrå i forhold
+          til banen rundt Jorden. Librasjon gjør at 59 prosent av Månens
+          overflate kan observeres fra Jorden.En måneformørkelse inntreffer når
+          Månen, Jorden og Sola ligger langs en linje slik at Jordens skygge
+          faller på Månen.
+        </li>
+        <br />
+        <li>
+          🌓Forholdet mellom den belyste delen av måneskiven og hele måneskiven
+          kalles en månefase. Ved nymåne er måneskiven mørk, ved fullmåne er den
+          helt opplyst. I første og siste kvarter er henholdsvis høyre og
+          venstre halvdel av måneskiven opplyst.
+          <br /><br />
+          🌔Tiden mellom disse fire hovedfasene er i gjennomsnitt 7,3 døgn, men
+          kan variere mellom 6,5 og 8,2 døgn på grunn av månebanens
+          eksentrisitet og skrå stilling i forhold til ekliptikken.
+          Tidsintervallet fra nymåne til påfølgende nymåne kalles lunasjon.
+          Lunasjonens lengde er 29,5306 døgn, kalt en synodisk måned. I løpet av
+          en synodisk måned vil Månen være solbelyst halve tiden og i mørke
+          halve tiden, altså omtrent 14 jorddøgn, som da blir dagens og nattens
+          lengde på Månen. Begrepet månedøgn er likevel forbeholdt tiden mellom
+          to øvre kulminasjoner av Månen, det vil si tiden mellom hver gang
+          Månen står i sør, analogt til soldøgn, som er tiden mellom hver gang
+          Solen står i sør.
+          <br /><br />
+          🌕Månens dannelse er et omstridt tema. Den hypotesen som har størst
+          tilslutning i dag, sier at et stort objekt streifet Jorden i dens
+          tidlige, fluide fase og rev med seg en tunge av gass og partikler, som
+          siden dannet Månen. Dette kan forklare hvorfor man finner både
+          likheter og ulikheter mellom overflatematerialet på Jorden og
+          Månen.<br /><br />
+        </li>
+      </ul>
+    </section>
 
-<div class="buttons">
-  <button id="prev-btn">Forrige</button>
-  <button id="today-btn">I dag</button>
-  <button id="next-btn">Neste</button>
-</div>
-</div>
-</div>
-</section>
-            
-          <section class="moon-box" id="facts">
-            <h2>Fakta om månen</h2>
-            <ul>
-              <li>
-                🌑Månen er Jordens eneste naturlige satellitt. Månen har gitt opphav til fellesbenevnelsen «måne» og er den femte største månen i solsystemet.
-                <br><br>
-                Middelavstanden til Jorden er om lag 384 000 kilometer. Månen bruker i gjennomsnitt 27 og en tredels dag på en runde rundt Jorden. Ettersom Jorden og Månen har bunden rotasjon, ser vi samme side av Månen hele tiden. Mennesket gikk for første gang på Månen 20. juli 1969, klokka 21:17:42 norsk tid, med romfartøyet Apollo 11, som del av Apollo-programmet. Foreløpig siste gang et menneske gikk på Månen var i 1972.
-              </li>
-              <br>
-              <li>
-                🌒Månen er synlig fra Jorden fordi den reflekterer lyset fra Sola. Den har såkalt bunden rotasjon, det vil si at den alltid vender samme side mot Jorden. Det ser ut som Månen vugger litt frem og tilbake i løpet av en måned, et fenomen kalt librasjon. Dette skyldes at banehastigheten varierer mens rotasjonshastigheten om egen akse er konstant, og er også et resultat av banens eksentrisitet (at banen ikke er sirkelrund), samt at rotasjonsaksens står på skrå i forhold til banen rundt Jorden. Librasjon gjør at 59 prosent av Månens overflate kan observeres fra Jorden.En måneformørkelse inntreffer når Månen, Jorden og Sola ligger langs en linje slik at Jordens skygge faller på Månen.
-              </li>
-              <br>
-              <li>
-                🌓Forholdet mellom den belyste delen av måneskiven og hele måneskiven kalles en månefase. Ved nymåne er måneskiven mørk, ved fullmåne er den helt opplyst. I første og siste kvarter er henholdsvis høyre og venstre halvdel av måneskiven opplyst.
-                <br><br>
-                🌔Tiden mellom disse fire hovedfasene er i gjennomsnitt 7,3 døgn, men kan variere mellom 6,5 og 8,2 døgn på grunn av månebanens eksentrisitet og skrå stilling i forhold til ekliptikken. Tidsintervallet fra nymåne til påfølgende nymåne kalles lunasjon. Lunasjonens lengde er 29,5306 døgn, kalt en synodisk måned. I løpet av en synodisk måned vil Månen være solbelyst halve tiden og i mørke halve tiden, altså omtrent 14 jorddøgn, som da blir dagens og nattens lengde på Månen. Begrepet månedøgn er likevel forbeholdt tiden mellom to øvre kulminasjoner av Månen, det vil si tiden mellom hver gang Månen står i sør, analogt til soldøgn, som er tiden mellom hver gang Solen står i sør.
-                <br><br>
-                🌕Månens dannelse er et omstridt tema. Den hypotesen som har størst tilslutning i dag, sier at et stort objekt streifet Jorden i dens tidlige, fluide fase og rev med seg en tunge av gass og partikler, som siden dannet Månen. Dette kan forklare hvorfor man finner både likheter og ulikheter mellom overflatematerialet på Jorden og Månen.<br><br>
-                </li>
-              </ul>
-          </section>
+    <section class="moon-box" id="gallery">
+      <h2>Bildegalleri</h2>
+      <div class="gallery">
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="images/Nasa-moon1.jpg"
+            alt="Thoth, egyptian god"
+          />
+        </div>
+        This composite image of the moon using Clementine data from 1994 is the
+        view we are most likely to see when the moon is full.Credit: NASA
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="images/Mountains-of-the-moon.jpg"
+            alt="Close up picture of the surface of the moon, showing mountains"
+          />
+        </div>
+        Mountains of the Moon. Most mountains on the Earth are formed as plates
+        collide and the crust buckles. Not so for the Moon, where mountains are
+        formed as a result of impacts as seen by NASA Lunar Reconnaissance
+        Orbiter. Creator Credit: NASA/GSFC/Arizona State University
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="images/Moon-false-color-mosaic.jpg"
+            alt="Close up of the moon colored in mosaic"
+          />
+        </div>
+        This false-color mosaic was constructed from a series of 53 images taken
+        through three spectral filters by NASA's Galileo imaging system as the
+        spacecraft flew over the northern regions of the Moon on December 7,
+        1992.
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="images/Earth-and-moon.jpg"
+            alt="Thoth, egyptian god"
+          />
+        </div>
+        During its flight, NASA’s Galileo spacecraft returned images of the
+        Earth and Moon. Separate images of the Earth and Moon were combined to
+        generate this view. Creator Credit: NASA/JPL/USGS.
+      </div>
+    </section>
 
-          <section class="moon-box" id="gallery">
-            <h2>Bildegalleri</h2>
-            <div class="gallery">
-    <div class="history-picture">
-      <img class="culture-img" src="images/Nasa-moon1.jpg" alt="Thoth, egyptian god">
-    </div>
-    This composite image of the moon using Clementine data from 1994 is the view we are most likely to see when the moon is full.Credit: NASA
-    <div class="history-picture">
-      <img class="culture-img" src="images/Mountains-of-the-moon.jpg" alt="Close up picture of the surface of the moon, showing mountains">
-    </div>
-     Mountains of the Moon.
-Most mountains on the Earth are formed as plates collide and the crust buckles. Not so for the Moon, where mountains are formed as a result of impacts as seen by NASA Lunar Reconnaissance Orbiter.
- Creator Credit: NASA/GSFC/Arizona State University
-    <div class="history-picture">
-      <img class="culture-img" src="images/Moon-false-color-mosaic.jpg" alt="Close up of the moon colored in mosaic">
-    </div>
-    This false-color mosaic was constructed from a series of 53 images taken through three spectral filters by NASA's Galileo imaging system as the spacecraft flew over the northern regions of the Moon on December 7, 1992.
-    <div class="history-picture">
-      <img class="culture-img" src="images/Earth-and-moon.jpg" alt="Thoth, egyptian god">
-    </div>
-    During its flight, NASA’s Galileo spacecraft returned images of the Earth and Moon. Separate images of the Earth and Moon were combined to generate this view. Creator Credit: NASA/JPL/USGS.
-  </div>
-          </section>
+    <section class="text-box" id="myths">
+      <h2>Myter og kultur om månen</h2>
+      <h3>Norge og Norden</h3>
+      <div class="history-row">
+        <div class="history-text">
+          <p>
+            Månen har fascinert mennesker i alle kulturer gjennom historien. I
+            Norden ble månen sett på som en viktig del av naturens rytmer og var
+            tett knyttet til både tid, jakt og jordbruk. I norrøn mytologi ble
+            månen personifisert som
+            <strong>Máni</strong>, sønn av guden Mundilfari. Ifølge mytene
+            kjører han en vogn trukket av hester over himmelen, jaget av ulven
+            Hati. Når Hati til slutt fanger ham, vil det markere Ragnarok,
+            verdens undergang. Månen var også viktig i gammel tidsregning, siden
+            mange av de eldste nordiske kalenderne var basert på månesykluser.
+          </p>
+        </div>
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="./images/image-asset.webp"
+            alt="A women holding a glowing moon"
+          />
+        </div>
+      </div>
 
-          <section class="text-box" id="myths">
-            <h2>Myter og kultur om månen</h2>
-            <h3>Norge og Norden</h3>
-            <div class="history-row">
-            <div class="history-text">
-            <p>
-              Månen har fascinert mennesker i alle kulturer gjennom historien. I
-              Norden ble månen sett på som en viktig del av naturens rytmer og
-              var tett knyttet til både tid, jakt og jordbruk. I norrøn mytologi ble månen personifisert som
-              <strong>Máni</strong>, sønn av guden Mundilfari. Ifølge mytene
-              kjører han en vogn trukket av hester over himmelen, jaget av ulven
-              Hati. Når Hati til slutt fanger ham, vil det markere Ragnarok,
-              verdens undergang. Månen var også viktig i gammel tidsregning,
-              siden mange av de eldste nordiske kalenderne var basert på
-              månesykluser.
-            </p>
-            </div>
-            <div class="history-picture" >
-              <img class="culture-img" src="./images/image-asset.webp" alt="A women holding a glowing moon">
-            </div>
-            </div>
-            
+      <h3>Det gamle Egypt</h3>
+      <div class="history-row">
+        <div class="history-text">
+          <p>
+            I egyptisk mytologi var månen ofte assosiert med guden
+            <strong>Thoth</strong>, visdommens og skriftens gud, som ble knyttet
+            til tid og orden. Samtidig ble månen også koblet til gudinnen
+            <strong>Selene</strong> i gresk tradisjon, som senere fikk
+            innflytelse i Egypt. Månen ble sett på som en himmelsk vokter som
+            balanserte solens kraft.
+          </p>
+        </div>
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="./images/thoth-egyptian-god-.jpg"
+            alt="Thoth, egyptian god, standing in frint om a moon"
+          />
+        </div>
+      </div>
 
-            <h3>Det gamle Egypt</h3>
-            <div class="history-row">
-            <div class="history-text">
-            <p>
-              I egyptisk mytologi var månen ofte assosiert med guden
-              <strong>Thoth</strong>, visdommens og skriftens gud, som ble
-              knyttet til tid og orden. Samtidig ble månen også koblet til
-              gudinnen <strong>Selene</strong> i gresk tradisjon, som senere
-              fikk innflytelse i Egypt. Månen ble sett på som en himmelsk vokter
-              som balanserte solens kraft.
-            </p>
-            </div>
-            <div class="history-picture" >
-              <img class="culture-img" src="./images/thoth-egyptian-god-.jpg" alt="Thoth, egyptian god, standing in frint om a moon">
-            </div>
-            </div>
+      <h3>Litteratur og musikk</h3>
+      <div class="history-row">
+        <div class="history-text">
+          <p>
+            Månen har inspirert poeter, forfattere og komponister i århundrer.
+            Den blir ofte brukt som symbol på romantikk, lengsel eller
+            forandring. I litteraturen finner vi den i alt fra Shakespeares
+            verker til moderne science fiction. I musikken har komponister som
+            Beethoven skrevet ikoniske stykker som
+            <em>"Måneskinnssonaten"</em>, mens i nyere tid finner vi månen i
+            utallige sanger innen både pop, rock og folkemusikk.
+          </p>
 
-            <h3>Litteratur og musikk</h3>
-            <div class="history-row">
-            <div class="history-text">
-            <p>
-              Månen har inspirert poeter, forfattere og komponister i århundrer.
-              Den blir ofte brukt som symbol på romantikk, lengsel eller
-              forandring. I litteraturen finner vi den i alt fra Shakespeares
-              verker til moderne science fiction. I musikken har komponister som
-              Beethoven skrevet ikoniske stykker som
-              <em>"Måneskinnssonaten"</em>, mens i nyere tid finner vi månen i
-              utallige sanger innen både pop, rock og folkemusikk.
-            </p>
+          <p>
+            Enten den representerer mystikk, tidens gang eller menneskelig
+            følelser har månen alltid hatt en plass i både mytologi og kultur,
+            og den fortsetter å inspirere oss i dag.
+          </p>
+        </div>
+        <div class="history-picture">
+          <img
+            class="culture-img"
+            src="./images/Måneskin-band-.png "
+            alt="LP-cover named Måneskin, with picture of a band"
+          />
+        </div>
+      </div>
+    </section>
 
-            <p>
-              Enten den representerer mystikk, tidens gang eller menneskelig
-              følelser har månen alltid hatt en plass i både mytologi og kultur,
-               og den fortsetter å inspirere oss i dag.
-            </p>
-            </div>
-             <div class="history-picture" >
-              <img class="culture-img" src="./images/Måneskin-band-.png " alt="LP-cover named Måneskin, with picture of a band">
-            </div>
-            </div>
-          </section>
-        
+    <footer>
+      <p>© 2025 Måneprosjekt</p>
+    </footer>
 
-        <footer>
-          <p>© 2025 Måneprosjekt</p>
-        </footer>
-      
     <script src="hovedside.js"></script>
   </body>
 </html>
