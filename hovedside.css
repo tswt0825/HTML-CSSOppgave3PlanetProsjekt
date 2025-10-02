@@ -94,13 +94,19 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
+  transition: transform 0.9s ease, background 0.2s ease; 
+  }
+  
 .navbar ul li a:hover {
   color: var(--sølvgrå);
   text-shadow: 0 0 8px var(--lysblå);
   
+}
+
+.navbar ul li:active {
+  transform: translateY(2px) scale(0.97);
+  box-shadow: inset 0 2px 6px rgba(28, 28, 25, 0.3);
+  background: rgba(26, 24, 24, 0.35);
 }
 
 .moon-box ul li{
