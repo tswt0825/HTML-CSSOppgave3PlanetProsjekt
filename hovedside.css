@@ -40,6 +40,18 @@ header {
   border-radius: 8px; /*  adds rounded corners to the element */
 }
 
+
+/* Backgroundvideo  */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* legger videoen bak alt annet */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -112,7 +124,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  background-image: url("./images/ksc-20220508-ph-snq01-0001orig.webp");
+  /* background-image: url("./images/ksc-20220508-ph-snq01-0001orig.webp"); */
   background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center; 

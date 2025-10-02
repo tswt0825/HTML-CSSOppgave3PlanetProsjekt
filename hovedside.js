@@ -120,7 +120,7 @@ const moonData = [
   },
 ];
 
-// 1) Beregner dagens månedag
+// 1)  Calculating todays moon
 function getMoonDayIndex() {
   const referenceNewMoon = new Date("2022-09-25T21:54:00Z");
   const now = new Date();
@@ -133,22 +133,22 @@ function getMoonDayIndex() {
   return Math.min(Math.max(index, 0), 27);
 }
 
-// 2) Setter startdag til dagens månefase
+// 2) Setting startday to, todays moonfase
 let currentIndex = getMoonDayIndex();
 
-// 3) Hent HTML-elementene
+// 3) Get HTML-elements
 const moonImage = document.getElementById("moon-image");
 const moonTitle = document.getElementById("moon-title");
 const moonText = document.getElementById("moon-text");
 
-// 4) Oppdater funksjonen
+// 4) Updating functions
 function updateMoon() {
   moonImage.src = `images/dag-${currentIndex + 1}.png`;
   moonTitle.textContent = moonData[currentIndex].title;
   moonText.textContent = moonData[currentIndex].text;
 }
 
-// 5) Knappene
+// 5) Buttons
 document.getElementById("prev-btn").addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + moonData.length) % moonData.length;
   updateMoon();
